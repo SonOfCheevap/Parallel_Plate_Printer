@@ -14,7 +14,7 @@ The project has 5 parts. Part 1,2,3 should be submitted by November 10.  Part 4,
 ![image](readme/image.png)
 
 ## Description
-An inkjet printer is shooting charged droplet towards a letter size paper. A capacitor is placed along its path so as to control the direction of motion of the droplet. Assume that, if a voltage V is applied across the capacitor, then the field E inside of the capacitor would be V=EW. The electric field E will add a vertical component of velocity (Vy) on the droplet  according to the equation: $V_y= a_y T$ . Here T is the time the droplet spends inside the capacitor, and is the vertical acceleration of the droplet, $a_y = F/m = qE/m$ . Here m is the mass of the droplet, and q is the charge of droplet.
+An inkjet printer is shooting charged droplet towards a letter size paper. A capacitor is placed along its path so as to control the direction of motion of the droplet. Assume that, if a voltage V is applied across the capacitor, then the field E inside of the capacitor would be V=EW. The electric field E will add a vertical component of velocity (Vy) on the droplet  according to the equation: $V_y= a_y T$ . Here T is the time the droplet spends inside the capacitor, and is the vertical acceleration of the droplet, $a_y = \frac{F}{m} = \frac{qE}{m}$ . Here m is the mass of the droplet, and q is the charge of droplet.
 
 The time T that the droplet spends inside the capacitor can be determined by this relation: $L1=V_x T$, where $V_x$ is the horizontal velocity of the droplet, and L1 is the length of the capacitor.
 
