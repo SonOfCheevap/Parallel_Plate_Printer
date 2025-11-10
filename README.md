@@ -45,3 +45,16 @@ Plot the profile of applied voltage V(t) versus time t.
 
 5. If you want to draw the letter ‘H’ on the paper, you have to add an additional capacitor to impose a velocity component to the droplet. Design the additional capacitor to draw the biggest possible ‘H’ on the paper.  You have to decide the design parameter of the capacitors to draw the ‘H’ shape (length, width of the capacitor plates, and their spacing). Simulate the entire process of drawing the biggest possible ‘H’ shape in 300 dpi resolution. Plot the voltage profile V(t) applied across the capacitor vs time t for both the capacitor. Both the voltage profile would look like a staircase.
 **Points = 25**
+
+# Part 1
+1. According to the simulation, it takes `0.00015 seconds` to reach the end of the paper, traveling at 20m/s with only 1 droplet and no voltage being applied to the parallel plates. Below is a gif showing the trajectory. A video is also stored in `videos`.
+![Question 1](gifs/question11.gif)
+
+2. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.009 seconds. This was at 300DPI. Below is a gif showing the trajectory, with a video also stored in `videos.`
+![Question 2](gifs/question12.gif)
+
+
+3. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.0045 seconds, at 300DPI. In testing, it was found that 5.346023303062736 was about as large that it could draw, before it started to hit the parallel plates. Below is a gif showing the trajectory, with a video also in `videos.`
+![Question 2](gifs/question13.gif)
+Below is also an image of the voltage vs time graph.
+![Question 2-1](gifs/voltage_time.png)
