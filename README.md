@@ -55,41 +55,42 @@ Plot the profile of applied voltage V(t) versus time t.
 
 # Part 1
 1. According to the simulation, it takes `0.00015 seconds` to reach the end of the paper, traveling at 20m/s with only 1 droplet and no voltage being applied to the parallel plates. Below is a gif showing the droplet. A video is also stored in `videos`.
-![Question 1](gifs/question1.gif)
+![Question 1](gifs/question1.gif) <br>
 
 2. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.009 seconds. This was at 300DPI. Below is a gif showing the drawing, with a video also stored in `videos.`
-![Question 2](gifs/question2.gif)
+![Question 2](gifs/question2.gif) <br>
 
 
 3. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.0045 seconds, at 300DPI. In testing, it was found that 5.346023303062736 was about as large that it could draw, before it started to hit the parallel plates. Below is a gif showing the drawing, with a video also in `videos.`
-![Question 3](gifs/question3.gif)
+![Question 3](gifs/question3.gif) <br>
 Below is also an image of the voltage vs time graph. This is the same for both question 2 and 3
-![Question 3-1](readme/voltage_q2_3.png)
+![Question 3-1](readme/voltage_q2_3.png) <br>
 
+# Part 2
 4. Part A. Below is a gif showing what happens if the distance betwene the capacitor and paper is increased 3x.
-![Question 4A](gifs/question4a.gif)
+![Question 4A](gifs/question4a.gif) <br>
 Below is also an image of the voltage vs time graph.
-![Question 4-1](readme/voltage_q4a.png)
+![Question 4-1](readme/voltage_q4a.png) <br>
 4. Part B. Below is a gif of what happens if the distance L1 is 2x larger.
-![Question 4B](gifs/question4b.gif)
+![Question 4B](gifs/question4b.gif) <br>
 Below is also an image of the voltage vs time graph.
-![Question 4-2](readme/voltage_q4b.png)
+![Question 4-2](readme/voltage_q4b.png) <br>
 4. Part C. Below is a gif that shows what happens if the droplet diameter is 10x larger.
-![Question 4C](gifs/question4c.gif)
+![Question 4C](gifs/question4c.gif) <br>
 Below is also an image of the voltage vs time graph.
-![Question 4-3](readme/voltage_q4c.png)
+![Question 4-3](readme/voltage_q4c.png) <br>
 4. Part D. Below is a gif that shows what happens if the droplets are shot at 2x the speed.
-![Question 4D](gifs/question4d.gif)
+![Question 4D](gifs/question4d.gif) <br>
 Below is also an image of the voltage vs time graph.
-![Question 4-4](readme/voltage_q4d.png)
+![Question 4-4](readme/voltage_q4d.png) <br>
 4. Part E. Below is a gif that shows what happens if the droplets have 5x the charge.
-![Question 4E](gifs/question4e.gif)
+![Question 4E](gifs/question4e.gif) <br>
 Below is also an image of the voltage vs time graph.
-![Question 4-5](readme/voltage_q4e.png)
+![Question 4-5](readme/voltage_q4e.png) <br>
 
 5. 2 parallel plates, the same size, were used in this section. Below is a gif that shows the results. It essentially draws 3 lines, and changes the voltage of each parallel plate to accomplish this.
-![Question 5](gifs/question5.gif)
+![Question 5](gifs/question5.gif) <br>
 Below is also an image of the voltage vs time graph, for the y axis.
-![Question 5-1](readme/voltage_q5_y.png)
+![Question 5-1](readme/voltage_q5_y.png) <br>
 Below is also an image of the voltage vs time graph, for the z axis.
-![Question 5-1](readme/voltage_q5_z.png)
+![Question 5-1](readme/voltage_q5_z.png)  <br>
