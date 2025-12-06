@@ -46,15 +46,50 @@ Plot the profile of applied voltage V(t) versus time t.
 5. If you want to draw the letter ‘H’ on the paper, you have to add an additional capacitor to impose a velocity component to the droplet. Design the additional capacitor to draw the biggest possible ‘H’ on the paper.  You have to decide the design parameter of the capacitors to draw the ‘H’ shape (length, width of the capacitor plates, and their spacing). Simulate the entire process of drawing the biggest possible ‘H’ shape in 300 dpi resolution. Plot the voltage profile V(t) applied across the capacitor vs time t for both the capacitor. Both the voltage profile would look like a staircase.
 **Points = 25**
 
+# How to run
+- Python 3 must be installed along with pip and pipenv <br>
+- Once downloaded, run `pipenv shell`. <br>
+- Run the first 2 blocks. After this, you can run any simulation math along with its plotting block, which is always right after. <br>
+- You can either show the animations live, or save them to a .mp4 file. Uncomment whichever you would like. <br>
+
+
 # Part 1
-1. According to the simulation, it takes `0.00015 seconds` to reach the end of the paper, traveling at 20m/s with only 1 droplet and no voltage being applied to the parallel plates. Below is a gif showing the trajectory. A video is also stored in `videos`.
-![Question 1](gifs/question11.gif)
+1. According to the simulation, it takes `0.00015 seconds` to reach the end of the paper, traveling at 20m/s with only 1 droplet and no voltage being applied to the parallel plates. Below is a gif showing the droplet. A video is also stored in `videos`.
+![Question 1](gifs/question1.gif)
 
-2. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.009 seconds. This was at 300DPI. Below is a gif showing the trajectory, with a video also stored in `videos.`
-![Question 2](gifs/question12.gif)
+2. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.009 seconds. This was at 300DPI. Below is a gif showing the drawing, with a video also stored in `videos.`
+![Question 2](gifs/question2.gif)
 
 
-3. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.0045 seconds, at 300DPI. In testing, it was found that 5.346023303062736 was about as large that it could draw, before it started to hit the parallel plates. Below is a gif showing the trajectory, with a video also in `videos.`
-![Question 2](gifs/question13.gif)
+3. According to the simulation, the time it took to draw the 'I', which was 5.346023303062736 mm long, took, 0.0045 seconds, at 300DPI. In testing, it was found that 5.346023303062736 was about as large that it could draw, before it started to hit the parallel plates. Below is a gif showing the drawing, with a video also in `videos.`
+![Question 3](gifs/question3.gif)
+Below is also an image of the voltage vs time graph. This is the same for both question 2 and 3
+![Question 3-1](readme/voltage_q2_3.png)
+
+4. Part A. Below is a gif showing what happens if the distance betwene the capacitor and paper is increased 3x.
+![Question 4A](gifs/question4a.gif)
 Below is also an image of the voltage vs time graph.
-![Question 2-1](gifs/voltage_time.png)
+![Question 4-1](readme/voltage_q4a.png)
+4. Part B. Below is a gif of what happens if the distance L1 is 2x larger.
+![Question 4B](gifs/question4b.gif)
+Below is also an image of the voltage vs time graph.
+![Question 4-2](readme/voltage_q4b.png)
+4. Part C. Below is a gif that shows what happens if the droplet diameter is 10x larger.
+![Question 4C](gifs/question4c.gif)
+Below is also an image of the voltage vs time graph.
+![Question 4-3](readme/voltage_q4c.png)
+4. Part D. Below is a gif that shows what happens if the droplets are shot at 2x the speed.
+![Question 4D](gifs/question4d.gif)
+Below is also an image of the voltage vs time graph.
+![Question 4-4](readme/voltage_q4d.png)
+4. Part E. Below is a gif that shows what happens if the droplets have 5x the charge.
+![Question 4E](gifs/question4e.gif)
+Below is also an image of the voltage vs time graph.
+![Question 4-5](readme/voltage_q4e.png)
+
+5. 2 parallel plates, the same size, were used in this section. Below is a gif that shows the results. It essentially draws 3 lines, and changes the voltage of each parallel plate to accomplish this.
+![Question 5](gifs/question5.gif)
+Below is also an image of the voltage vs time graph, for the y axis.
+![Question 5-1](readme/voltage_q5_y.png)
+Below is also an image of the voltage vs time graph, for the z axis.
+![Question 5-1](readme/voltage_q5_z.png)

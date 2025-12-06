@@ -20,6 +20,7 @@
 	\section*{Introduction}
 		The goal of this project was to design an ink jet printer simulation. In this printer, it would use a charged particle, with a charge of $-1.9 \times 10^{-9}\ \mathrm{C}$, which would then pass through a set of parallel plates. Depending on what voltage these parallel plates were, it would affect the trajectory of where the ink would land. By exploiting this, you would be able to form any letter you would like, and at any resolution given. In this case, a resolution of 300 DPI was chosen. \newline
 		To be able to simulate this, it was chosen to write this simulation in Jupyter notebook using python. By doing this, you are able to run the individual sections that are wanted. To be able to show the animations and graphs, the Python library Matplotlib was chosen. By utilizing its 2D graphing ability to display information, and its 3D graphing ability to give animation, I was able create an accurate simulation on how a charge ink droplet would behave when passed through a parallel plate with an electric field. Additionally, I was able to time all the results in simulation, and verify through hand calculations that these values are theoretically correct. \newline
+		In the GitHub repository, videos and GIF files can be found there, which contains pre rendered results of the animations. \newline
 	
 	Below are a couple of links related to the project:
 	\begin{itemize}
@@ -46,7 +47,7 @@
 			\label{Figure 2}
 		\end{figure}
  	\section*{Part 3}
- 		In part 3, the goal was similar to part 2, where we had to draw the letter 'I' at 300DPI. However, this time, the goal was to draw it as large as possible. Another task was to have a graph of voltage versus time. A third item requested was to speed up the time it takes for the letter to print. For the first part, the same voltage was used as before, as going above 2360 volts would cause the droplet to hit one of the plates. So the maximum size found was 5.36mm. For the second part, a graph of the voltage versus time was found by taking the voltage measurements alongside a time measurement. From there, you are able to graph the data, and it should be shown as a staircase function. For the third part, to be able to speed up how quickly the item prints, a new strategy was adopted regarding how ink is dispensed. Instead of the ink being sent out once the previous droplet has reached the end, once the droplet has reached the midpoint, then the next drop of ink is then shot out. By doing this, we were able to cut down the amount of time it took to print the lettter 'I' by half, so our print time decreased to 0.0045 seconds.Below is the final result of the animation. A video and GIF animation are both found in the GitHub repository. \newline
+ 		In part 3, the goal was similar to part 2, where we had to draw the letter 'I' at 300DPI. However, this time, the goal was to draw it as large as possible. Another task was to have a graph of voltage versus time. A third item requested was to speed up the time it takes for the letter to print. For the first part, the same voltage was used as before, as going above 2360 volts would cause the droplet to hit one of the plates. So the maximum size found was 5.36mm. For the second part, a graph of the voltage versus time was found by taking the voltage measurements alongside a time measurement. From there, you are able to graph the data, and it should be shown as a staircase function. For the third part, to be able to speed up how quickly the item prints, a new strategy was adopted regarding how ink is dispensed. Instead of the ink being sent out once the previous droplet has reached the end, once the droplet has reached the midpoint, then the next drop of ink is then shot out. By doing this, we were able to cut down the amount of time it took to print the lettter 'I' by half, so our print time decreased to 0.0045 seconds. Below is the final result of the animation. A video and GIF animation are both found in the GitHub repository. \newline
  		\begin{figure}[H]
  			\begin{center}
  				\includegraphics[width=10cm]{part3.png}
@@ -54,14 +55,141 @@
  			\caption{End Result of Part 3 Animation}
  			\label{Figure 3}
  		\end{figure}
-		Below is the graph of the voltage versus time. \newline
+		Below is the graph of the voltage versus time. This voltage graph is the exact same for both question 2 and 3. \newline
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=10cm]{voltage_time.png}
+				\includegraphics[width=10cm]{voltage_q2_3.png}
 			\end{center}
 			\caption{Voltage versus time}
 			\label{Figure 4}
 		\end{figure}
 		As expected, the graph appears to be a staircase function. 
+		
+		\section*{Part 4}
+			The goal here is to re simulate drawing the letter 'I' as quick as possible and as big as possible. There are 5 subsections here, each where we change a parameter.
+			\subsection*{A: The distance between the capacitor and the paper L2 is threefold increased, and everything else remains same}
+			Since the voltage between the end of the capacitor and paper are increased, our droplets will have more time to fly through 'free space.' Meaning, we can now draw a larger 'I' due to the trajectories being changing to be farther away vertically on the paper. Here the voltage was kept the same, but the amount of voltage change was different, to accommodate the change in trajectories and the amount of droplets fired. In this case, the maximum size found was 14.314020250299166mm, in 0.023184 seconds. Below is the end result of the Part 4a animation. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{part4a.png}
+				\end{center}
+				\caption{End Result of Part 4a Animation}
+				\label{Figure 5}
+			\end{figure}
+			
+			Below is  the graph of voltage over time. Notice how the start and end voltages are the same, but the voltage steps are much smaller. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{voltage_q4a.png}
+				\end{center}
+				\caption{Voltage versus time, with L2 threefold increased}
+				\label{Figure 6}
+			\end{figure}
+			
+			\subsection*{L1 is twofold increased, and everything else remains same}
+			In this case, the distance between the cannon and the capacitor is increased by 2x. In this case, this will only affect the amount of time it takes for the the letter 'I' to be drawn, as the distance after the capacitor is still the same as part 2 and 3. This size of the letter 'I' will also not change. From the results, it draw the letter 'I' 5.418266861212942 mm long, and it took 0.006450000000000001 seconds. Below is a figure of the final frame of the animation. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{part4b.png}
+				\end{center}
+				\caption{End Result of Part 4b Animation}
+				\label{Figure 7}
+			\end{figure}
+			
+			Below is  the graph of voltage over time. The voltage steps should have gone back to how part 2 and 3 where, but overall taking longer between each step. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{voltage_q4b..png}
+				\end{center}
+				\caption{Voltage versus time, with L1 twofold increased}
+				\label{Figure 8}
+			\end{figure}
+			
+			\subsection*{Droplet diameter is tenfold increased, and everything else remains same}
+			In this case, the droplet diameter is now 10x larger. Not only will this mean that the number of dots drawn will decrease down to only 6, from 60, but it also means that the amount of voltage needed to actually affect the trajectory of the droplets also increases significantly. The starting voltage is 1000000V, and changes by 333333.333333V. The print resolution also significantly changes, as now the number of dots has decreased, and the gaps between each circle is much more prevalent. Below is a figure of the final frame of the animation. Notice how much wider the letter 'I' is, and how much less precise it appears. However, it does print much faster. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{part4c.png}
+				\end{center}
+				\caption{End Result of Part 4c Animation}
+				\label{Figure 9}
+			\end{figure}
+			
+			Below is  the graph of voltage over time. Notice how much larger the voltage steps are in this case, and how many less there are. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{voltage_q4c.png}
+				\end{center}
+				\caption{Voltage versus time, with droplet diameter tenfold increased}
+				\label{Figure 10}
+			\end{figure}
+			
+			\subsection*{The horizontal speed at which the gun shoots the droplet is twofold increased, and everything else remains same}
+			In this case, the droplets are now being shot at 40m/s. Theoretically, this would mean that the amount of time to draw the letter 'I' would decrease by half. Indeed it did, to draw the letter it took only 0.00225 seconds. One compensation that had to be made was since the droplet was spending less time in the parallel plates (due to the increased velocity), the voltage had to also be doubled to compensate. Below is a figure of the final frame of the animation. The droplet looks exactly the same as previous results, but was completed twice as fast. \newline	
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{part4d.png}
+				\end{center}
+				\caption{End Result of Part 4d Animation}
+				\label{Figure 11}
+			\end{figure}
+			
+			Below is  the graph of voltage over time. Notice how the voltage overall is much larger on the graph, but the amount of steps is the same. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{voltage_q4d.png}
+				\end{center}
+				\caption{Voltage versus time, with droplet moving 2x faster}
+				\label{Figure 12}
+			\end{figure}
+			
+			\subsection*{The charge of the droplet is fivefold increased, and everything else remains same.}
+			In this case, the amount of charge the droplet has is now 5x larger. The change that had to be done in this case was to lower the plate voltage by 5x. Since the force on the droplet depends on its own charge, having a 5x larger charge also meant a 5x larger force  on the droplet itself. The amount of time it took to complete and its size did not differ. Below is the figure of the end result of the animation. The shape of the letter 'I' did not change at all. \newline 
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{part4e.png}
+				\end{center}
+				\caption{End Result of Part 4e Animation}
+				\label{Figure 13}
+			\end{figure}
+			
+			Below is the graph of voltage over time. Notice how the voltage overall is much smaller on the graph, but the amount of steps is the same. \newline
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=10cm]{voltage_q4e.png}
+				\end{center}
+				\caption{Voltage versus time, with droplet charge 5x larger}
+				\label{Figure 14}
+			\end{figure}
+		
+		\section*{Part 4}
+		In this portion, we now have to add a 2nd pair of parallel plates, and draw the letter 'H' as fast as possible and as larger as possible, with the same 300DPI resolution. In this case, I chose my 2nd pair of parallel plates to be the same size as the first, as this would allow me to draw an 'H' and use the same voltage parameters and limits for both pairs of plates. So the same voltage and voltage steps could be used. \newline
+		In terms of actually drawing this, it was like drawing 3 separate 'I's. For the first portion, a vertical line was drawn on the far right of the paper. In this case, the first parallel plates had a varying voltage, while the 2nd pair had a constant voltage that was maxed out at 2360V. The second portion had a vertical line drawn on the far left of the paper. The voltage was once again varied for the first pair, but the 2nd pair had its constant voltage reversed. For the final line, which was a long horizontal line down the middle, the first pair of parallel plates had no voltage applied, while the second pair had its voltage vary. The end result of this was the letter 'H'. Below is the end result of the animation. Notice the 2nd pair of parallel plates shaded a different color. It took 0.0135 seconds to draw. \newline 
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=10cm]{part5.png}
+			\end{center}
+			\caption{End Result of Part 5 Animation}
+			\label{Figure 15}
+		\end{figure}
+		
+		Below is the graph of voltage over time for the y axis. As said before, the voltage was varying for the first 2 portions, then it was turned off. \newline
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=10cm]{voltage_q5_y.png}
+			\end{center}
+			\caption{Voltage versus time, Y axis}
+			\label{Figure 16}
+		\end{figure}
+		Below is the graph of voltage over time for the z axis. As said before, the voltage was constant and at its max for the first 2 portions, then varying when drawing the horizontal line.. \newline
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=10cm]{voltage_q5_z.png}
+			\end{center}
+			\caption{Voltage versus time, Z axis}
+			\label{Figure 17}
+		\end{figure}
+		
+		This project report was written and the project was programmed by me, Sylvester Pudelko.
 	
 \end{document}
