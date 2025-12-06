@@ -71,19 +71,19 @@ Below is also an image of the voltage vs time graph. This is the same for both q
 ![Question 4A](gifs/question4a.gif) <br>
 Below is also an image of the voltage vs time graph.
 ![Question 4-1](readme/voltage_q4a.png) <br>
-4. Part B. Below is a gif of what happens if the distance L1 is 2x larger.
+Part B. Below is a gif of what happens if the distance L1 is 2x larger.
 ![Question 4B](gifs/question4b.gif) <br>
 Below is also an image of the voltage vs time graph.
 ![Question 4-2](readme/voltage_q4b.png) <br>
-4. Part C. Below is a gif that shows what happens if the droplet diameter is 10x larger.
+Part C. Below is a gif that shows what happens if the droplet diameter is 10x larger.
 ![Question 4C](gifs/question4c.gif) <br>
 Below is also an image of the voltage vs time graph.
 ![Question 4-3](readme/voltage_q4c.png) <br>
-4. Part D. Below is a gif that shows what happens if the droplets are shot at 2x the speed.
+Part D. Below is a gif that shows what happens if the droplets are shot at 2x the speed.
 ![Question 4D](gifs/question4d.gif) <br>
 Below is also an image of the voltage vs time graph.
 ![Question 4-4](readme/voltage_q4d.png) <br>
-4. Part E. Below is a gif that shows what happens if the droplets have 5x the charge.
+Part E. Below is a gif that shows what happens if the droplets have 5x the charge.
 ![Question 4E](gifs/question4e.gif) <br>
 Below is also an image of the voltage vs time graph.
 ![Question 4-5](readme/voltage_q4e.png) <br>
